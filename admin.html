@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body class="bg-info-subtle">
+    <div>
+      <nav class="navbar w-100 bg-body-tertiary">
+        <div
+          class="container-fluid d-flex bg-info-subtle border border-primary-subtle"
+        >
+        <div class="w-50 d-flex">
+          <img
+            src="./images/learning_logo.webp"
+            alt="company logo"
+            width="7%"
+            height="7%"
+            class="text-left align-items-left"
+          />
+          <h1 class="text-left">LearnStack</h1>
+        </div>
+        <div class="d-flex justify-content-left align-items-left">
+          <form class="d-flex w-300" role="search">
+            <input
+              class="d-flex w=300 me-2 text-left"
+              type="search"
+              placeholder="Search for"
+              aria-label="Search"
+            />
+        </div>
+            <button class="btn btn-outline-normal" type="submit">Search</button>
+          </form>
+
+          <div w-200>
+            <button type="button" class="btn btn-primary">Notifications</button>
+            <button type="button" class="btn btn-primary">Generate Report</button>
+            <a class="navbar-brand">Welcome Admin</a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- navigation bar to do the side menu -->
+      <div class="d-flex cotainer align-items:text-center">
+        <div
+          class="row text-primary-emphasis border border-primary-subtle align-items:left w-20 vh-100"
+        >
+          <div class="col-6">
+            <nav class="navbar bg-normal">
+              <ul class="nav navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#"> Dashboard </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"> Portfolio </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Managing Courses </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"> Promotions </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Graphs</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Announcements</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">History</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Settings</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"> Contact Us </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <!-- <div>
+    <button>Generate report</button>
+</div> -->
+        <!-- Bootstrap grid reflecting data statistics -->
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-3">
+              <div class="data_analysis bg-warning px-5">
+                <h5>Total Students</h5>
+                <p>3280</p>
+                <div
+            class="progress"
+            role="progressbar"
+            aria-label="Basic example"
+            aria-valuenow="50"
+            aria-valuemin="0"
+            aria-valuemax="50"
+            style="width: 80%"
+          >
+            <div class="progress-bar bg-light" style="width: 100%"></div>
+          </div>
+                <p>80% increase in 20 days</p>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="data_analysis bg-success px-5">
+                <h5>New Students</h5>
+                <p>245</p>
+                <div
+            class="progress"
+            role="progressbar"
+            aria-label="Basic example"
+            aria-valuenow="50"
+            aria-valuemin="0"
+            aria-valuemax="50"
+            style="width: 80%"
+          >
+            <div class="progress-bar bg-light" style="width: 100%"></div>
+          </div>
+                <p>80% increase in 20 days</p>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="data_analysis bg-info px-5">
+                <h5>Total Courses</h5>
+                <p>50</p>
+                <div
+            class="progress"
+            role="progressbar"
+            aria-label="Basic example"
+            aria-valuenow="50"
+            aria-valuemin="0"
+            aria-valuemax="50"
+            style="width: 20%"
+          >
+            <div class="progress-bar bg-light" style="width: 100%"></div>
+          </div>
+                <p>20% increase in 50 days</p>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="data_analysis bg-danger px-5">
+                <h5>Fees Collected</h5>
+                <p>50000$</p>
+                <div
+            class="progress"
+            role="progressbar"
+            aria-label="Basic example"
+            aria-valuenow="50"
+            aria-valuemin="0"
+            aria-valuemax="50"
+            style="width: 10%"
+          >
+            <div class="progress-bar bg-light" style="width: 100%"></div>
+          </div>
+                <p>10% increase in 30 days</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <!-- created bootstrap table to show students who topped -->
+            <div class="bg-info text-white w-50 top-buffer">
+              Top Students of the year
+            </div>
+            <table class="table w-50 table-hover table-sm table-info">
+              <tbody>
+                <tr>
+                  <td>2344</td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                </tr>
+                <tr>
+                  <td>2345</td>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                </tr>
+                <tr>
+                  <td>2354</td>
+                  <td>Larry</td>
+                  <td>the Bird</td>
+                </tr>
+                <tr>
+                  <td>1234</td>
+                  <td>Larry</td>
+                  <td>tdrd</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="container-fluid bg-info text-white top-buffer">
+            Hot courses
+          </div>
+          <div class="container d-flex top-buffer">
+            <br />
+            <div class="card-body border border-dark-subtle">
+              <img
+                src="./images/project_management.avif"
+                alt="PojectManagement"
+                width="300px"
+                height="100px"
+              />
+              <br />
+              <p><b>Introduction to Project Management</b></p>
+              <p></p>
+              <table class="table w-100 table-hover table-sm table-info">
+                <tbody class="bg-info-subtle">
+                  <tr>
+                    <td>Course Duration</td>
+                    <td>1 month</td>
+                  </tr>
+                  <tr>
+                    <td>Course Starts</td>
+                    <td>April 23</td>
+                  </tr>
+                  <tr>
+                    <td>Professor</td>
+                    <td>Jackson</td>
+                  </tr>
+                </tbody>
+              </table>
+              <button type="button" class="btn btn-primary">Read More</button>
+            </div>
+            <div class="card-body border border-dark-subtle">
+              <img
+                src="./images/ai.webp"
+                alt="GenerativeAI"
+                width="300px"
+                height="100px"
+              />
+              <br />
+              <p><b>Generative AI</b></p>
+              <p></p>
+              <table class="table w-100 table-hover table-sm table-info">
+                <tbody class="bg-info-subtle">
+                  <tr>
+                    <td>Course Duration</td>
+                    <td>3 month</td>
+                  </tr>
+                  <tr>
+                    <td>Course Starts</td>
+                    <td>May 23</td>
+                  </tr>
+                  <tr>
+                    <td>Professor</td>
+                    <td>Mary Joe</td>
+                  </tr>
+                </tbody>
+              </table>
+              <button type="button" class="btn btn-primary">Read More</button>
+            </div>
+            <div class="card-body border border-dark-subtle">
+              <img
+                src="./images/aws.webp"
+                alt="PojectManagement"
+                width="300px"
+                height="100px"
+              />
+
+              <br />
+              <p><b>AWS Restart</b></p>
+              <p></p>
+              <table class="table w-100 table-hover table-sm table-info">
+                <tbody class="bg-info-subtle">
+                  <tr>
+                    <td>Course Duration</td>
+                    <td>2 month</td>
+                  </tr>
+                  <tr>
+                    <td>Course Starts</td>
+                    <td>June 23</td>
+                  </tr>
+                  <tr>
+                    <td>Professor</td>
+                    <td>John Dere</td>
+                  </tr>
+                </tbody>
+              </table>
+              <button type="button" class="btn btn-primary">Read More</button>
+            </div>
+            <div class="card-body border border-dark-subtle">
+              <img
+                src="./images/full_stack.webp"
+                alt="PojectManagement"
+                width="300px"
+                height="100px"
+              />
+              <br />
+              <p><b>Full Stack Developer</b></p>
+              <p></p>
+              <table class="table w-100 table-hover table-sm table-info">
+                <tbody class="bg-info-subtle">
+                  <tr>
+                    <td>Course Duration</td>
+                    <td>3 month</td>
+                  </tr>
+                  <tr>
+                    <td>Course Starts</td>
+                    <td>March 23</td>
+                  </tr>
+                  <tr>
+                    <td>Professor</td>
+                    <td>Mary Joe</td>
+                  </tr>
+                </tbody>
+              </table>
+              <button type="button" class="btn btn-primary">Read More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+.top-buffer { margin-top:15px; }
+.data_analysis{
+    
+    margin-left: 10px;
+    margin-right: 10px; 
+    align-items: left;
+    margin-top: 20px;
+}
+.rightmargin{
+    margin-right: 20px;
+}
+.card-body{
+    width:300px;
+    border:5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    transition-property:font-size background-color border-color ;
+    transition-duration: 2s;
+ 
+ }
